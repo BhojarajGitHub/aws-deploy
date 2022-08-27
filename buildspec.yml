@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+
+  build:
+    commands:
+      - echo Build started on
+      - mvn install
+  post_build:
+    commands:
+      - echo Build completed
+artifacts:
+  files:
+    - target/aws-deploy.jar
+  discard-paths: yes
